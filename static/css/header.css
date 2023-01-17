@@ -1,0 +1,666 @@
+nav {
+    position: relative;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.upper-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 0%);
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.upper-nav-left {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.upper-nav-right {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2.75rem;
+    width: 11.875rem;
+    gap: 1.25rem;
+    justify-content: right;
+}
+
+@media (min-width: 31.25rem) {
+    .upper-nav-right {
+        background-color: hsl(0, 79%, 57%);
+    }
+}
+
+@media (min-width: 48rem) {
+    .upper-nav-right {
+        width: 18.75rem;
+        padding-top: 2.96rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-right {
+        width: 31.25rem;
+    }
+}
+
+.no-color {
+    background-color: transparent;
+}
+
+@media (min-width: 48rem) {
+    .no-color {
+        background-color: hsl(0, 79%, 57%);
+    }
+}
+
+.upper-nav-left img {
+    width: 11rem;
+    margin-right: 5%;
+}
+
+.upper-nav-left a:first-child {
+    display: block;
+}
+
+.upper-nav-left a {
+    display: none;
+    padding: 0 1.1rem;
+    color: hsl(0, 0%, 100%);
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1rem;
+    text-decoration: none;
+    margin: auto;    
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-left a {
+        display: block;
+    }
+}
+
+.upper-nav-left a:hover {
+    padding-top: 0.488rem;
+}
+
+.upper-nav-left a:first-child:hover {
+    padding-top: 0;
+}
+
+.upper-nav-left a:first-child:hover::after {
+    width: 0;
+    height: 0;
+}
+
+.upper-nav-left a:hover::after {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.3rem 0 0;
+    background: hsl(0, 0%, 100%);
+    content: '';
+}
+
+.upper-nav-right a:nth-child(2){
+    display: none;
+}
+
+@media (min-width: 48rem) {
+    .upper-nav-right a:nth-child(2) {
+        display: block;
+    }
+}
+
+.upper-nav-right a:first-child{
+    display: none;
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-right a:first-child {
+        display: block;
+    }
+}
+
+.upper-nav-right a {
+    color: hsl(0, 0%, 0%);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.upper-nav-right a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.upper-nav-right button img {
+    filter: brightness(0) invert(1);
+}
+
+@media (min-width: 48rem) {
+    .upper-nav-right button img {
+        filter: none;
+    }
+}
+
+.upper-nav-right img {
+    width: 3.25rem;
+    height: 2.2rem;
+    background-color: transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-right img {
+        width: 1.563rem; 
+    }
+}
+
+.upper-nav-right img:hover {
+    filter: brightness(0) invert(1);
+}
+
+.upper-nav-right a:first-child:hover::after {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.3rem 0 0;
+    background: hsl(0, 0%, 100%);
+    content: '';
+}
+
+.upper-nav-right button {
+    background-color: transparent;
+    border: 0;
+    height: 2.188rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.lower-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    height: 60rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 48rem) {
+    .lower-nav {
+        height: 50rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .lower-nav {
+        height: 70rem; 
+    }
+}
+
+.lower-nav-rapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+    padding: 16rem 10rem;   
+    width: fit-content; 
+    background-size: contain;
+}
+
+@media (min-width: 30rem) {
+    .lower-nav-rapper {
+        padding: 16rem 15rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lower-nav-rapper {
+        padding: 25rem 17.5rem;
+        background-image: url(../img/hero-tablet.jpg);
+    }
+}
+
+@media (min-width: 80rem) {
+    .lower-nav-rapper {
+        padding: 35rem 40rem;
+        background-image: url(../img/banner_img.jpg);
+    }
+}
+
+@media (min-width: 26rem) {
+    .nav-title {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.drop {
+    margin-top: 32rem;
+}
+
+@media (min-width: 48rem) {
+    .drop {
+        margin: 0;
+    }
+}
+
+.lower-nav h1 {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    width: 12.2rem;
+    font-size: 1.8rem;
+    padding-right: 0.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    line-height:  2.1rem;
+    font-family: "Stolzl Display", sans-serif;
+}
+
+@media (min-width: 26rem) {
+    .lower-nav h1 {
+        width: fit-content;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lower-nav h1 {
+        font-size: 2.5rem;
+        line-height: 3.1rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .lower-nav h1 {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+        height: 5.5rem;
+        padding-top: 1rem;
+        margin-right: 2.25rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+    }
+}
+
+.lower-nav h1::after {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 0;
+    width: 13.5rem;
+    height: 6rem;
+    background: hsl(0, 79%, 57%);
+    content: '';
+    z-index: -1;
+}
+
+@media (min-width: 26rem) {
+    .lower-nav h1::after {
+        top: 0;
+        left: auto;
+        right: 0rem;
+        width: 11.875rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lower-nav h1::after {
+        width: 18.75rem;
+        height: 8rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .lower-nav h1::after {
+        width: 31.25rem;
+        height: 12.5rem;
+    }
+}
+
+.drop h1::after {
+    top: 32rem;
+}
+
+@media (min-width: 48rem) {
+    .drop h1::after {
+        top: 0;
+    }
+}
+
+.nav-text-rapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-text-rapper a {
+    text-decoration: none;
+}
+
+.arrow-right {
+    position: relative;
+    height: 1rem;
+    width: 6rem;
+    transition: all 0.3s;
+}
+
+.line::before {
+    display: inline-block;
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.4rem;
+    background-color: hsl(0, 0%, 100%);  
+}
+
+.arrow-right .arrow-point::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-right: solid 0.4rem hsl(0, 0%, 100%);
+    border-bottom: solid 0.4rem hsl(0, 0%, 100%);
+    transform: rotate(-45deg);  
+    transition: all 0.3s;
+}
+
+.nav-text:hover .arrow-right {
+    width: 9rem;
+}
+
+.nav-text:hover .arrow-right .arrow-point::before {
+    left: 7rem;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 31.25rem;
+    padding: 1.875rem 0;
+}
+
+@media (min-width: 48rem) {
+    .nav-text {
+        width: 18.75rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-text {
+        width: 31.25rem;
+    }
+}
+
+.nav-text-left  {
+    filter: brightness(0) invert(1);
+    margin: auto 0;
+    margin-right: 3.125rem;
+}
+
+.nav-text-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-text-right p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+@media (min-width: 48rem) {
+    .nav-text-right p {
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-text-right p {
+        font-size: 1.875rem;
+    }
+}
+
+.nav-text-right p:nth-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (min-width: 48rem) {
+    .nav-text-right p:nth-child(2) {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-text-right p:nth-child(2) {
+        font-size: 1.25rem;
+    }
+}
+
+.nav-calender-rapper {
+    display: flex; 
+}
+
+@media (min-width: 48rem) {
+    .nav-calender-rapper {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-calender-rapper {
+        margin-right: 8.125rem;
+    }
+}
+
+.nav-calender {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "day1 day2 day3 day4 day5"
+    "day6 day7 day8 day9 day10";
+}
+
+@media (min-width: 48rem) {
+    .nav-calender {
+        width: fit-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "day1 day2 ." 
+        "day3 day4 day5"
+        "day6 day7 day8"
+        ". day9 day10";
+    }
+}
+
+.nav-calender a {
+    display: grid;
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+    border: solid hsl(0, 0%, 0%) 1px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: 7.5rem;
+    text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+    .nav-calender a {
+        width: 7.2rem;
+        height: 5.75rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-calender a {
+        width: 10rem;
+        height: 7.5rem;
+    }
+}
+
+.nav-calender a:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.day1 {
+    grid-area: day1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day2 {
+    grid-area: day2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day3 {
+    grid-area: day3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day4 {
+    grid-area: day4;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day5 {
+    grid-area: day5;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day6 {
+    grid-area: day6;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day7 {
+    grid-area: day7;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day8 {
+    grid-area: day8;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day9 {
+    grid-area: day9;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day10 {
+    grid-area: day10;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.calender-text {
+    grid-area: text;
+}
+
+.calender-text h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-family: "Stolzl Display", sans-serif;
+    font-weight: 700;
+}
+
+@media (min-width: 48rem) {
+    .calender-text h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .calender-text h3 {
+        font-size: 1.875rem;
+    }
+}
+
+.calender-text p {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    font-family: "Stolzl", sans-serif;
+}
+
+@media (min-width: 80rem) {
+    .calender-text p {
+        font-size: 1.125rem;
+    }
+}

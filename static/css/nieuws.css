@@ -1,0 +1,148 @@
+#nieuws {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.upper-nav-left a:nth-child(2):after {
+    display: block;
+    width: 1.563rem;
+    height: 0.938rem;
+    margin: 0.3rem 0 0;
+    border-top: solid 3px hsl(0, 0%, 100%);
+    border-left: solid 3px hsl(0, 0%, 100%);
+    background: 0 0;
+    content: '';
+}
+
+.upper-nav-left a:nth-child(2) {
+    padding-top: 1.238rem;
+}
+
+.nieuws-container {
+    border: solid hsl(0, 0%, 100%) 1px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 3.125rem;
+    position: relative;
+}
+
+@media (min-width: 48rem) {
+    .nieuws-container {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+
+@media (min-width: 85rem) {
+    .nieuws-container {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+.nieuws-container:nth-child(1) {
+    margin-top: 3.125rem;
+}
+
+.nieuws-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nieuws-container:hover  .nieuws-left {
+    background-color: hsl(0, 79%, 57%);
+}
+
+@media (min-width: 48rem) {
+    .nieuws-container:hover  .nieuws-left {
+        background-color: transparent;
+    }
+}
+
+.nieuws-left h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 100%);
+    font-family: "Stolzl", sans-serif;
+    width: 10rem;
+    padding: 0.875rem;
+    transition: .2s ease-in-out;
+    z-index: 100;
+}
+
+@media (min-width: 26.25rem) {
+    .nieuws-left h2 {
+        width: 18.75rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .nieuws-left h2 {
+        font-size: 1.875rem; 
+    }
+}
+
+.nieuws-left img {
+    filter: brightness(0) invert(1);
+    transition: .2s;
+    width: 5rem;
+    height: 1.875rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    
+}
+
+.nieuws-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 85rem) {   
+    .nieuws-right img {
+        width: 48.125rem;
+        height: 24.063rem;
+    }
+}
+
+.nieuws-container:hover .nieuws-left h2 {
+    color: hsl(0, 0%, 0%);
+}
+
+.nieuws-container:hover .nieuws-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 79%, 57%);
+    transition: .2s ease-in-out;
+}
+
+@media (min-width: 48rem) {   
+    .nieuws-container:hover .nieuws-hover {
+        display: block;
+        padding: 2.8rem 10rem;
+    }
+}
+
+@media (min-width: 57.5rem) {   
+    .nieuws-container:hover .nieuws-hover {
+        padding: 3.563rem 12.5rem;
+    }
+}
+
+.nieuws-container .arrow {
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.nieuws-container:hover .arrow {
+    width: 7rem;
+}
+
+.nieuws-container:hover .arrow .arrow-point::before {
+    left: 6rem;
+}

@@ -1,0 +1,647 @@
+nav {
+    position: relative;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.upper-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 0%);
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.upper-nav-left {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.upper-nav-right {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2.75rem;
+    width: 11.875rem;
+    gap: 1.25rem;
+    justify-content: right;
+}
+
+@media (min-width: 31.25rem) {
+    .upper-nav-right {
+        background-color: hsl(0, 79%, 57%);
+    }
+}
+
+@media (min-width: 48rem) {
+    .upper-nav-right {
+        width: 18.75rem;
+        padding-top: 2.96rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-right {
+        width: 31.25rem;
+    }
+}
+
+.upper-nav-left img {
+    width: 11rem;
+    margin-right: 5%;
+}
+
+.upper-nav-left a:first-child {
+    display: block;
+}
+
+.upper-nav-left a {
+    display: none;
+    padding: 0 1.1rem;
+    color: hsl(0, 0%, 100%);
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1rem;
+    text-decoration: none;
+    margin: auto;    
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-left a {
+        display: block;
+    }
+}
+
+.upper-nav-left a:hover {
+    padding-top: 0.488rem;
+}
+
+.upper-nav-left a:first-child:hover {
+    padding-top: 0;
+}
+
+.upper-nav-left a:first-child:hover::after {
+    width: 0;
+    height: 0;
+}
+
+.upper-nav-left a:hover::after {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.3rem 0 0;
+    background: hsl(0, 0%, 100%);
+    content: '';
+}
+
+.upper-nav-right a:nth-child(2){
+    display: none;
+}
+
+@media (min-width: 48rem) {
+    .upper-nav-right a:nth-child(2) {
+        display: block;
+    }
+}
+
+.upper-nav-right a:first-child{
+    display: none;
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-right a:first-child {
+        display: block;
+    }
+}
+
+.upper-nav-right a {
+    color: hsl(0, 0%, 0%);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.upper-nav-right a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.upper-nav-right img {
+    height: 2rem;
+    background-color: transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+    filter: brightness(0) invert(1);
+}
+
+@media (min-width: 31.25rem) {
+    .upper-nav-right img {
+        filter: none;  
+    }
+}
+
+@media (min-width: 80rem) {
+    .upper-nav-right img {
+        width: 1.563rem;
+        height: 2.188rem;   
+    }
+}
+
+.upper-nav-right img:hover {
+    filter: brightness(0) invert(1);
+}
+
+.upper-nav-right a:first-child:hover::after {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.3rem 0 0;
+    background: hsl(0, 0%, 100%);
+    content: '';
+}
+
+.upper-nav-right button {
+    background-color: transparent;
+    border: 0;
+    height: 2.188rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.lower-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    height: 70rem;
+}
+
+.nav-title {
+    display: flex;
+     justify-content: flex-end;
+ }
+
+.lower-nav h1 {
+    display: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 12rem;
+    font-size: 1.8rem;
+    padding-right: 0.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    line-height:  2.1rem;
+    font-family: "Stolzl Display", sans-serif;
+}
+
+@media (min-width: 26rem) {
+    .lower-nav h1 {
+        display: block;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lower-nav h1 {
+        font-size: 2.5rem;
+        line-height: 3.1rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .lower-nav h1 {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+        height: 5.5rem;
+        padding-top: 1rem;
+        margin-right: 2.25rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+    }
+}
+
+.lower-nav h1::after {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    width: 13rem;
+    height: 4rem;
+    background: hsl(0, 79%, 57%);
+    content: '';
+    z-index: -1;
+}
+
+@media (min-width: 26rem) {
+    .lower-nav h1::after {
+        left: auto;
+        right: 0rem;
+        height: 6rem;
+        width: 11.875rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lower-nav h1::after {
+        width: 18.75rem;
+        height: 19rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .lower-nav h1::after {
+        width: 31.25rem;
+        height: 12.5rem;
+    }
+}
+
+.nav-text-rapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 31.25rem;
+    padding: 1.875rem 0;
+}
+
+.nav-text-left img {
+    filter: brightness(0) invert(1);
+    margin-top: 0.563rem;
+    margin-right: 3.125rem;
+}
+
+.nav-text-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-text-right p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+.nav-text-right p:nth-child(2){
+    font-size: 1.25rem;
+}
+
+.nav-calender-rapper {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+@media (min-width: 26rem) {
+    .nav-calender-rapper {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 4.5rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-calender-rapper {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2.625rem;
+    }
+}
+
+.nav-calender-rapper h1 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: "Stolzl Display", sans-serif;
+}
+
+@media (min-width: 48rem) {
+    .nav-calender-rapper h1{
+        display: none
+    }
+}
+
+.nav-calender {
+    display: none;
+}
+
+@media (min-width: 48rem) {
+    .nav-calender{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "day1 day2 day3 day4 day5"
+        "day6 day7 day8 day9 day10";
+    }
+}
+
+@media (min-width: 80rem) {
+    .nav-calender{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.nav-calender a {
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+    border: solid hsl(0, 0%, 0%) 1px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 7.156rem;
+    height: 7.973rem;
+    text-decoration: none;
+}
+
+.nav-calender a:nth-child(4) {
+    background-color:hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border-left: solid hsl(0, 0%, 100%) 1px;
+    border-right: solid hsl(0, 0%, 100%) 1px;
+}
+
+.nav-calender a:nth-child(5) {
+    background-color:hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border-left: solid hsl(0, 0%, 100%) 1px;
+}
+
+.nav-calender a:nth-child(9) {
+    background-color:hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border-left: solid hsl(0, 0%, 100%) 1px;
+    border-right: solid hsl(0, 0%, 100%) 1px;
+}
+
+.nav-calender a:nth-child(10) {
+    background-color:hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border-left: solid hsl(0, 0%, 100%) 1px;
+}
+
+.nav-calender a:nth-child(4):hover {
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+}
+
+.nav-calender a:nth-child(5):hover {
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+}
+
+.nav-calender a:nth-child(9):hover {
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+}
+
+.nav-calender a:nth-child(10):hover {
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+}
+
+@media (min-width: 80rem) {
+
+    .nav-calender a:nth-child(4) {
+        background-color:hsl(0, 79%, 57%);
+        color: hsl(0, 0%, 0%);
+        border-left: solid hsl(0, 0%, 0%) 1px;
+        border-right: solid hsl(0, 0%, 0%) 1px;
+    }
+    
+    .nav-calender a:nth-child(5) {
+        background-color:hsl(0, 79%, 57%);
+        color: hsl(0, 0%, 0%);
+        border-left: solid hsl(0, 0%, 0%) 1px;
+    }
+
+    .nav-calender a:nth-child(4):hover {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .nav-calender a:nth-child(5):hover {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .nav-calender a:nth-child(7) {
+        background-color:hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+        border-right: solid hsl(0, 0%, 100%) 1px;
+    }
+
+    .nav-calender a:nth-child(8) {
+        background-color:hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+        border-left: solid hsl(0, 0%, 100%) 1px;
+        border-right: solid hsl(0, 0%, 100%) 1px;
+    }
+
+    .nav-calender a:nth-child(7):hover {
+        background-color: hsl(0, 79%, 57%);
+        color: hsl(0, 0%, 0%);
+    }
+
+    .nav-calender a:nth-child(8):hover {
+        background-color: hsl(0, 79%, 57%);
+        color: hsl(0, 0%, 0%);
+    }
+}
+
+.nav-calender a:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.day1 {
+    grid-area: day1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day2 {
+    grid-area: day2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day3 {
+    grid-area: day3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day4 {
+    grid-area: day4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day5 {
+    grid-area: day5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day6 {
+    grid-area: day6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day7 {
+    grid-area: day7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day8 {
+    grid-area: day8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day9 {
+    grid-area: day9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+.day10 {
+    grid-area: day10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." 
+    "text"
+    ".";
+}
+
+@media (min-width: 80rem) {
+    .nav-calender .active-day {
+        height: 10rem;
+        border: transparent;
+    }
+}
+
+.calender-text {
+    grid-area: text;
+}
+
+.calender-text h3 {
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+    font-family: "Stolzl Display", sans-serif;
+    font-weight: 700;
+}
+
+.calender-text p {
+    font-size: 1.125rem;
+    line-height: 1.969rem;
+    font-family: "Stolzl", sans-serif;
+}
+
+.upper-nav-left a:nth-child(3) {
+    padding-top: 1.238rem;
+}
+
+.upper-nav-left a:nth-child(3):after {
+    display: block;
+    width: 1.563rem;
+    height: 0.938rem;
+    margin: 0.3rem 0 0;
+    border-top: solid 3px hsl(0, 0%, 100%);
+    border-left: solid 3px hsl(0, 0%, 100%);
+    background: 0 0;
+    content: '';
+}
+
+#wijzigDag {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border: transparent;
+}
+
+@media (min-width: 26rem) {
+    #wijzigDag {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        justify-content: end;
+    }
+}
+
+#wijzigDag img {
+    filter: brightness(0) invert(1);
+    width: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+    #wijzigDag {
+        display: none;
+    }
+}

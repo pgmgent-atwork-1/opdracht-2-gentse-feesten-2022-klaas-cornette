@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/header-programa.css">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/events-programa.css">
+    <link rel="stylesheet" href="../static/css/programa.css">
+    <title>Programa | Gentse Feesten 2022</title>
+</head>
+
+
+<body>
+    <div id="hamburger-wijzig-dag">
+        <div class="hamburger-content-rapper">
+            <div class="hamburger-banner">
+                <div class="upper-hamburger">
+                    <div class="upper-hamburger-right">
+                        <button id="wijzigDag-close"><img src="../static/img/gentse-feesten-icoontjes/cross.svg" alt="navigation icon"></button>
+                    </div>
+                </div>
+                <div class="hamburger-nav">
+                    <div class="hamburger-days display">
+                        <div id="hamburger-dag-display"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hamburger-content-dag">
+        <div class="hamburger-content-rapper">
+            <div class="hamburger-banner">
+                <div class="upper-hamburger">
+                    <div class="upper-hamburger-left">
+                        <a href="../index.html"><img src="../static/img/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="upper-hamburger-right">
+                        <a href="../search.html"><img src="../static/img/gentse-feesten-icoontjes/search.svg" alt="search icon"></a>
+                        <button id="hamburger-close-dag"><img src="../static/img/gentse-feesten-icoontjes/cross.svg" alt="navigation icon"></button>
+                    </div>
+                </div>
+                <div class="hamburger-nav">
+                    <div class="hamburger-links">
+                        <a href="../nieuws.html">NIEUWS</a>
+                        <a href="dag.html?day=15"><p>PROGRAMMA</p><img src="../static/img/gentse-feesten-icoontjes/arrow-right-long.svg" alt=""><img src="../static/img/gentse-feesten-icoontjes/arrow-down.svg" alt=""></a>
+                        <div class="hamburger-days-smal-screen">
+                            <a href="dag.html?day=15">Vrijdag 15 Juli</a>
+                            <a href="dag.html?day=16">Zaterdag 16 Juli</a>
+                            <a href="dag.html?day=17">Zondag 17 Juli</a>
+                            <a href="dag.html?day=18">Maandag 18 Juli</a>
+                            <a href="dag.html?day=19">Dinsdag 19 Juli</a>
+                            <a href="dag.html?day=20">Woensdag 20 Juli</a>
+                            <a href="dag.html?day=21">Donderdag 21 Juli</a>
+                            <a href="dag.html?day=22">Vrijdag 22 Juli</a>
+                            <a href="dag.html?day=23">Zaterdag 23 Juli</a>
+                            <a href="dag.html?day=24">Zondag 24 Juli</a>
+                            <a href="dag.html?day=15">Programma</a>
+                        </div>
+                        <a href="#">PRAKTISCH</a>
+                        <a href="#">HOE NAAR GF22?</a>
+                    </div>
+                    <div class="hamburger-days">
+                        <a href="dag.html?day=15">Vrijdag 15 Juli</a>
+                        <a href="dag.html?day=16">Zaterdag 16 Juli</a>
+                        <a href="dag.html?day=17">Zondag 17 Juli</a>
+                        <a href="dag.html?day=18">Maandag 18 Juli</a>
+                        <a href="dag.html?day=19">Dinsdag 19 Juli</a>
+                        <a href="dag.html?day=20">Woensdag 20 Juli</a>
+                        <a href="dag.html?day=21">Donderdag 21 Juli</a>
+                        <a href="dag.html?day=22">Vrijdag 22 Juli</a>
+                        <a href="dag.html?day=23">Zaterdag 23 Juli</a>
+                        <a href="dag.html?day=24">Zondag 24 Juli</a>
+                        <a href="dag.html?day=15">Programma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="upper-nav">
+                <div class="upper-nav-left">
+                    <a href="../index.html"><img src="../static/img/logo.svg" alt="logo"></a>
+                    <a href="../nieuws.html">NIEUWS</a>
+                    <a href="dag.html?day=15">PROGRAMA</a>
+                    <a href="#">PRAKTISCH</a>
+                </div>
+                <div class="upper-nav-right">
+                    <a href="#">HOE NAAR GF22?</a>
+                    <a href="../search.html"><img src="../static/img/gentse-feesten-icoontjes/search.svg" alt="search icon"></a>
+                    <button id="hamburger-dag"><img src="../static/img/gentse-feesten-icoontjes/hamburger.svg" alt="navigation icon"></button>
+                </div>
+            </div>
+            <div class="lower-nav" style="height: auto;">
+                <div class="nav-title">
+                    <h1></h1>
+                    <div id="calender"></div>
+                </div>
+                <button id="wijzigDag"><img src="../static/img/gentse-feesten-icoontjes/sync.svg" alt=""><p>Wijzig dag</p></button>
+            </div>  
+        </nav>
+    </header>
+    <section class="filter">
+        <div class="filter-title">
+            <h2>FILTER</h2>
+        </div>
+        <div class="filter-rapper">
+            <div class="normal-filter">
+                <div class="filter-atributes">
+                    <img src="../static/img/gentse-feesten-icoontjes/marker.svg" alt="marker icon">
+                    <a href="#">Feestpleinen</a>
+                </div>
+                <div class="filter-atributes">
+                    <img src="../static/img/gentse-feesten-icoontjes/category.svg" alt="categorie icon">
+                    <a href="#">Categorie</a>
+                </div>
+                <div class="filter-atributes">
+                    <img src="../static/img/gentse-feesten-icoontjes/clock.svg" alt="clock icon">
+                    <a href="#">Tijd</a>
+                </div>
+                <div class="filter-atributes">
+                    <img src="../static/img/gentse-feesten-icoontjes/balloon.svg" alt="baloon icon">
+                    <a href="#">Kinderen</a>
+                </div>
+            </div>
+            <div class="extra-filter">
+                <div class="filter-atributes">
+                    <input type="checkbox" id="toegangkelijkheid">
+                    <label for="toegangkelijkheid"></label>
+                    <img src="../static/img/gentse-feesten-icoontjes/wheelchair.svg" alt="wheelchair icon">
+                </div>
+                <div class="filter-atributes">
+                    <input type="checkbox" id="graties">
+                    <label for="graties"></label>
+                    <p>Gratis</p>
+                </div>
+            </div>
+        </div>
+        <div class="filter-categorie-rapper">
+            <div id="filter"></div>
+            <div class="filter-holder" id="listButton-holder">
+                <img src="../static/img/gentse-feesten-icoontjes/list.svg" id="listButton">
+            </div>
+            <div class="filter-holder" id="rasterButton-holder">
+                <img src="../static/img/gentse-feesten-icoontjes/raster.svg" id="rasterButton">
+            </div>
+        </div>
+        <div class="filter-search">
+            <input type="text" placeholder="Doorzoek het programma..." id="search">
+            <img src="../static/img/gentse-feesten-icoontjes/search.svg" alt="search icon" id="searchButton">
+        </div>
+    </section>          
+    
+    <div id="programa"></div>
+    <script src="../static/data/calender.json"></script>
+    <script src="../static/js/load-calender.js"></script>
+    <script src="../static/js/filter.js"></script>
+    <script src="../static/js/fetch.js"></script>
+    <script src="../static/js/programa.js"></script>
+    <script src="../static/js/hamburger-dag.js"></script>
+    <script src="../static/js/hamburger-wijzig-dag.js"></script>
+
+    <footer>
+        <div class="upper-footer">
+            <div class="footer-nav">
+                <a href="#"><h3>Spot Onze Foto's</h3><div class="arrow-black"><span class="line"></span><span class="arrow-point"></span></div></a>
+                <a href="#"><div class="arrow-black-left"><span class="arrow-point"></span><span class="line"></span></div><h3>Aanschouw Onze Video's</h3></a>
+            </div>
+            <div class="footer-title">
+                <h4>Blijf Op De Hoogte</h4>
+                <p>Schijf je in op de nieuwsbrief van de Gentse Feesten</p>
+                <input type="text" name="fname" placeholder="Jouw e-mailadres">
+                <a href="#">INSCHRIJVEN</a>
+                <p>De stad Gent zal de persoonsgegevens die je invult met respect voor jouw <a href="#">privacy</a> behandelen.</p>
+            </div>
+        </div>
+        <div class="footer-botom">
+            <div class="footer-social">
+                <div class="footer-left">
+                    <svg xmlns="http://www.w3.org/2000/svg"><path d="M17.49 25v-8.21h2.95l.44-3.2h-3.39v-2.043c0-.927.276-1.558 1.697-1.558L21 9.988V7.126A25.196 25.196 0 0 0 18.445 7h-.091.005c-2.614 0-4.403 1.491-4.403 4.23v2.36H11v3.2h2.956V25h3.535z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg"><path d="M11.034 12c2.228 0 4.034 1.791 4.034 4 0 2.21-1.806 4-4.034 4S7 18.21 7 16c0-2.209 1.806-4 4.034-4zM25 16c0 2.21-1.806 4-4.034 4s-4.034-1.79-4.034-4c0-2.209 1.806-4 4.034-4S25 13.791 25 16z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg"><path d="M26.8 12.1c0-.3-.3-1.9-1.1-2.7C25 8.7 24 8.3 23 8.2h-.2C19.8 8 16.2 8 16 8s-3.8 0-6.8.2H9c-1 0-1.9.5-2.6 1.2-.8.8-1.1 2.4-1.1 2.7-.2 1.2-.3 2.4-.3 3.6v1.6c0 1.2.1 2.4.2 3.6 0 .3.3 1.8 1.1 2.7.8.7 1.7 1.1 2.7 1.1H9.3c1.7.2 6.4.2 6.6.2.2 0 3.8 0 6.8-.2h.2c1 0 1.9-.5 2.6-1.2.8-.8 1.1-2.4 1.1-2.7.1-1.2.2-2.4.2-3.6v-1.6c.2-1.1.1-2.3 0-3.5zm-13.7 7.8v-7.4l7.1 3.7-7.1 3.7z"/></svg>
+                </div>
+                <div class="footer-right">
+                    <img src="../static/img/logo-footer.svg" alt="logo">
+                </div>
+            </div>
+            <div class="footer-date">
+                <p>De wedergeboorte</p><hr><p>15 - 24 juli 2022</p>
+            </div>
+            <div class="footer-madeby">
+                <div class="footer-left">
+                    <h4>#GF22</h4>
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.avs.be/"><img src="../static/img/partner-avs.svg" alt="avs logo"></a>
+                    <a href="https://stad.gent/nl"><img src="../static/img/partner-stad-gent.svg" alt="stat gent logo"></a>
+                    <a href="https://www.maene.be/nl_BE/"><img src="../static/img/piano-maene.svg" alt="maene logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bodem-text-rapper">
+            <div class="footer-bodem-text">
+                <div class="footer-bodem-left">
+                    <a href="https://www.pgm.gent/atwork1-gentse-feesten-2022/nl/privacy.html">Privacy</a>
+                    <a href="#">Cookie instellingen</a>   
+                </div>
+    
+                <div class="footer-bodem-right">
+                    <p>Deze website is gebouwd door Klaas Cornette in opdracht van Artevelde Hogeschool voor het vak @work1, en heeft enkel een educatief nut.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

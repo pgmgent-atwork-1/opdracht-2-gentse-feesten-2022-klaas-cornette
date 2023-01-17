@@ -1,0 +1,656 @@
+@font-face {
+    font-family:'Stolzl Display';
+    src: url('../fonts/Stolzl\ Display\ Bold.woff2') format('woff2'),
+		url('../fonts/Stolzl\ Display\ Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family:'Stolzl';
+    src: url('../fonts/Stolzl-Bold.woff2') format('woff2'),
+		url('../fonts/Stolzl-Bold.woff') format('woff');
+        font-weight: 700;
+}
+
+@font-face {
+    font-family:'Stolzl';
+    src: url('../fonts/Stolzl-Medium.woff2') format('woff2'),
+		url('../fonts/Stolzl-Medium.woff') format('woff');
+        font-weight: 400;
+}
+
+@font-face {
+    font-family:'Stolzl';
+    src: url('../fonts/Stolzl-Regular.woff2') format('woff2'),
+		url('../fonts/Stolzl-Regular.woff') format('woff');
+}
+
+.upper-footer {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.footer-nav a {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 79%, 57%);
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Stolzl Display", sans-serif;
+    width: fit-content;  
+}
+
+@media (min-width: 48rem) {
+    .footer-nav a {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .footer-nav a {
+        font-size: 3.125rem;
+    }
+}
+
+.footer-title {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/footer-banner.jpg);
+    background-repeat: no-repeat;
+    max-width: 90rem;
+    background-position: right bottom;
+    background-size: contain;
+    padding-bottom: 2.5rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-title {
+        padding-bottom: 20rem;
+        background-position: right top;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 80rem) {
+    .footer-title {
+        background-size: contain;
+    }
+}
+
+.footer-title h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Stolzl Display", sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.25rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-title h4 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .footer-title h4 {
+        font-size: 3.125rem;
+    }
+}
+
+.footer-title p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: "Stolzl", sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 4.375rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-title p  {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .footer-title p  {
+        font-size: 1.25rem;
+    }
+}
+
+.footer-title input {
+    border: 0;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    background-color: transparent;
+    height: 2.8rem;
+    font-size: 1.125rem;
+    font-family: "Stolzl Display", sans-serif;
+    font-stretch: 100%;
+    font-weight: 300;
+    width: 18.125rem;
+    padding: 0 1rem;
+}
+
+.footer-title input::placeholder {
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-title a {
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 79%, 57%);
+    width: fit-content;
+    padding: 0.938rem 1.875rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-family: "Stolzl Display", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.footer-title a:last-child {
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    padding: 0;
+    font-size: 0.813rem;
+    font-family: "Stolzl", sans-serif;
+    line-height: 1.25rem;
+}
+
+.footer-title p:last-child {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-size: 0.813rem;
+    font-family: "Stolzl", sans-serif;
+    line-height: 1.25rem;
+}
+
+.footer-botom {
+    background-color:hsl(0, 79%, 57%);
+    padding-top: 8.125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-social {
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-bottom: 4.375rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-social .footer-left svg {    
+    border-radius: 100%;
+    background-color: hsl(0, 0%, 0%);
+    width: 2.1rem;
+    height: 2.1rem;
+    margin: auto 0;
+    fill: hsl(0, 0%, 100%);
+}
+
+.footer-social .footer-left svg:hover {    
+    background-color: hsl(0, 0%, 100%);
+    fill: hsl(0, 0%, 0%);
+}
+
+
+
+.footer-social .footer-right img {
+    width: 13.75rem;
+}
+
+@media (min-width: 63.75rem) {
+    .footer-social .footer-right img {
+        width: 20rem;
+    }
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-date {
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-bottom: 6.25rem;
+    text-align: center;
+}
+
+@media (min-width: 48rem) {
+    .footer-date {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer-madeby {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-bottom: 4.375rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-madeby {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-date hr {
+    margin: 0 1rem;
+    height: 2px;
+    margin: auto 0;
+    border-color: black;
+}
+
+@media (min-width: 48rem) {
+    .footer-date hr {
+        width: 70%;
+    }
+}
+
+.footer-date p {
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
+    font-family: "Stolzl", sans-serif;
+}
+
+.footer-date p:nth-child(1) {
+    padding-right: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-date p:nth-child(1) {
+        margin-bottom: 0rem;
+    }
+}
+
+.footer-date p:last-child {
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+    .footer-date p:last-child {
+        padding-left: 0.9rem;
+        margin-top: 0rem;
+    }
+}
+
+.footer-madeby h4 {
+    color: hsl(0, 0%, 0%);
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+    font-family: "Stolzl Display", sans-serif;
+}
+
+.footer-madeby .footer-right img {
+    height: 2.5rem;
+    margin-left: 2rem;
+}
+
+.footer-bodem-text-rapper {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.footer-bodem-text {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+@media (min-width: 70rem) {
+    .footer-bodem-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-bodem-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-bodem-left a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding-right: 0.5rem;
+    font-size: 0.813rem;
+    line-height: 1.422rem;
+    font-family: "Stolzl", sans-serif;
+}
+
+.footer-bodem-right p {
+    font-size: 0.813rem;
+    line-height: 1.75rem;
+    font-family: "Stolzl", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.arrow:hover {
+    width: 7rem;
+}
+
+.arrow:hover .arrow-point::before {
+    left: 6rem;
+}
+
+.arrow {
+    position: relative;
+    height: 1rem;
+    width: 4rem;
+    transition: all 0.3s;
+}
+
+.arrow .line::before {
+    display: inline-block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: hsl(0, 0%, 100%);  
+}
+
+.arrow .arrow-point::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-right: solid 0.2rem hsl(0, 0%, 100%);
+    border-bottom: solid 0.2rem hsl(0, 0%, 100%);
+    transform: rotate(-45deg);  
+    transition: all 0.3s;
+}
+
+.arrow-black {
+    position: relative;
+    height: 1rem;
+    width: 4rem;
+    transition: all 0.3s;
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+.arrow-black .line::before {
+    display: inline-block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: hsl(0, 0%, 0%);  
+}
+
+.arrow-black .arrow-point::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-right: solid 0.2rem hsl(0, 0%, 0%);
+    border-bottom: solid 0.2rem hsl(0, 0%, 0%);
+    transform: rotate(-45deg);  
+    transition: all 0.3s;
+}
+
+.footer-nav a:hover .arrow-black .arrow-point::before {
+    left: 6rem;
+}
+
+.footer-nav a:hover .arrow-black {
+    width: 7rem;
+}
+
+.arrow-black-left {
+    position: relative;
+    height: 1rem;
+    width: 4rem;
+    transition: all 0.3s;
+    margin: auto 0;
+    margin-right: 1rem;
+}
+
+.arrow-black-left .line::before {
+    display: inline-block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: hsl(0, 0%, 0%);  
+}
+
+.arrow-black-left .arrow-point::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-left: solid 0.2rem hsl(0, 0%, 0%);
+    border-top: solid 0.2rem hsl(0, 0%, 0%);
+    transform: rotate(-45deg);  
+    transition: all 0.3s;
+}
+
+.footer-nav a:hover .arrow-black-left {
+    width: 7rem;
+}
+
+.hamburger-banner {
+    margin: 0 auto;
+    max-width: 90rem;
+    padding: 0 2rem;
+}
+
+.hamburger-banner a {
+    text-decoration: none;
+}
+
+.hamburger-banner a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.hamburger-content-rapper { 
+    background: hsl(0, 79%, 57%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    overflow-y: auto;   
+}
+
+@media (min-width: 60rem) {
+    .hamburger-content-rapper::after {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50vw;
+        height: 120vh;
+        background: hsl(0, 0%, 0%) url(../img/hamburger-img.jpg) center right no-repeat;
+        background-size: contain;
+        content: '';
+        z-index: -1;
+    }
+}
+
+.upper-hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6.25rem;
+    margin-top: 3.125rem;
+}
+
+.upper-hamburger-left img {
+    width: 9.375rem;
+    filter: brightness(0) invert(0);
+}
+
+.upper-hamburger-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper-hamburger-right img {
+    width: 1.125rem;
+    height: 1.375rem;
+    filter: brightness(0) invert(1);
+}
+
+.upper-hamburger-right button {
+    background-color: transparent;
+    border: transparent;
+    width: 2.5rem;
+    height: fit-content;
+    margin-left: 1rem;
+}
+
+.upper-hamburger-right button img {
+    width: 2.5rem;
+    filter: brightness(0) invert(1);
+}
+
+.hamburger-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger-links a {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 2.25rem;
+}
+
+.hamburger-links a img:nth-child(2) {
+    display: none;
+}
+
+@media (min-width: 35rem) {
+    .hamburger-links a img:nth-child(2){
+        display: block;
+        height: 1rem;
+        position: relative;
+    }
+}
+
+@media (min-width: 35rem) {
+    .hamburger-links a img:nth-child(3){
+        display: none;
+    }
+}
+
+.hamburger-links a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.hamburger-days {
+    display: none;
+}
+
+@media (min-width: 35rem) {
+    .hamburger-days {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.7rem;
+    }
+}
+
+.display {
+    display: block;
+    margin-top: 3.7rem;
+}
+
+.hamburger-days-smal-screen {
+    padding-left: 2rem;
+}
+
+@media (min-width: 35rem) {
+    .hamburger-days-smal-screen {
+        display: none;
+    }
+}
+
+.hamburger-days a {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 2.25rem;
+    margin-left: 1rem; 
+}
+
+#hamburger-dag-display {
+    position: relative;
+    top: -8rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburger-dag-display a {
+    display: flex;
+    flex-direction: row;
+}
+
+#hamburger-dag-display a img {
+    position: relative;
+    top: -0.3rem;
+} 
+
+#hamburger-dag-display a:hover img {
+    filter: brightness(0) invert(1);
+}

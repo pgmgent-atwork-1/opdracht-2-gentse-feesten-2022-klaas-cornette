@@ -1,0 +1,343 @@
+#detail {
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 6.625rem;
+}
+
+@media (min-width: 26rem) {
+    #detail {
+        margin-top: 5.625rem;
+    }
+}
+
+.detail-rapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+    gap: 5rem;
+}
+
+@media (min-width: 48rem) {
+    .detail-rapper {
+        margin-left: 3.75rem;
+    }
+}
+
+@media (min-width: 70rem) {
+    .detail-rapper {
+        flex-direction: row;
+    }
+}
+
+.go-back a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+}
+
+.go-back a:hover .arrow-left {
+    width: 7rem;
+}
+
+.arrow-left {
+    position: relative;
+    height: 1rem;
+    width: 4rem;
+    transition: all 0.3s;
+    margin: auto 0;
+    margin-right: 1rem;
+}
+
+.arrow-left .line::before {
+    display: inline-block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: hsl(0, 0%, 100%);  
+}
+
+.arrow-left .arrow-point::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-left: solid 0.2rem hsl(0, 0%, 100%);
+    border-top: solid 0.2rem hsl(0, 0%, 100%);
+    transform: rotate(-45deg);  
+    transition: all 0.3s;
+}
+
+.go-back p {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Stolzl', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.detail-left {
+    width: 100%;
+}
+
+@media (min-width: 70rem) {
+    .detail-left {
+        width: 50%;
+    }
+}
+
+.detail-left h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Stolzl Display', sans-serif;
+    margin-bottom: 1.25rem;
+}
+
+@media (min-width: 70rem) {
+    .detail-left h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.detail-under-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+}
+
+.detail-under-title img {
+    height: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 0.3rem;
+}
+
+.detail-under-title p:first-child {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    font-family: 'Stolzl', sans-serif;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 79%, 57%);
+    margin-right: 1rem;
+}
+
+.detail-under-title p:last-child {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Stolzl', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.detail-left p {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Stolzl', sans-serif;
+    font-size: 1.063rem;
+    line-height: 1.859rem;
+    margin-bottom: 2.5rem;
+}
+
+.detail-information-component {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 48rem) {
+    .detail-information-component {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+
+.detail-information-component p {
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+    width: 10rem;
+}
+
+.detail-information-component p:nth-child(2) {
+    font-weight: 400;
+}
+
+.detail-information-component a {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Stolzl', sans-serif;
+    font-size: 1.063rem;
+    line-height: 1.859rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    margin-bottom: 0.625rem;
+}
+
+.detail-information-component a:hover {
+    color: hsl(0, 100%, 50%);
+}
+
+.detail-social img:hover {
+    background-color: hsl(0, 79%, 57%);
+}
+
+.detail-right img {
+    width: 40.188rem;
+}
+
+.detail-social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.detail-social img {
+    width: 3.25rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.detail-categorie {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-map {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.25rem;
+    margin-top: 6.25rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 50rem) {
+    .detail-map {
+        flex-direction: row;
+    }
+}
+
+.detail-map-left {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 79%, 57%);
+    width: 100%;
+    height: 25.625rem;
+    padding: 2.5rem;
+}
+
+@media (min-width: 50rem) {
+    .detail-map-left {
+        width: 50%;
+    }
+}
+
+.detail-map-right {
+    width: 100%;
+}
+
+@media (min-width: 50rem) {
+    .detail-map-right {
+        width: 80%;
+    }
+}
+
+@media (min-width: 93.75rem) {
+    .detail-map-right {
+        width: 100%;
+    }
+}
+
+.detail-map-left p {
+    color: hsl(0, 0%, 0%);
+    font-family: 'Stolzl', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.detail-map-left p:nth-child(3) {
+    margin-bottom: 0.625rem;
+}
+
+.detail-map-left p:first-child {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.406rem;
+    font-family: 'Stolzl', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    padding: 0.375rem 1.25rem;
+    margin-bottom: 1.25rem;
+    width: fit-content;
+}
+
+.detail-map-left img {
+    height: 1.75rem;
+    filter: brightness(0) invert(1);
+    margin-right: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.detail-map-left a {
+    color: hsl(0, 0%, 0%);
+    font-size: 1.125rem;
+    line-height: 1.969rem;
+    font-family: 'Stolzl', sans-serif;
+    margin-bottom: 0.625rem;
+}
+
+.detail-map-left a:last-child {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.969rem;
+    font-family: 'Stolzl', sans-serif;
+    border: solid 1.333px hsl(0, 0%, 0%);
+    padding: 0.375rem 0.625rem;
+    width: fit-content;
+    transition: all .2s ease-in-out;
+}
+
+.detail-map-left a:last-child:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.event-container-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detail-andere-evenementen h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Stolzl Display', sans-serif;
+    text-align: center;
+    margin: 6.25rem 0;
+}
+
+@media (min-width: 37.5rem) {
+    .detail-andere-evenementen h3 {
+        font-size: 2.5rem;
+    }
+}
+
+.detail-andere-evenementen {
+    margin-bottom: 6.25rem;
+}

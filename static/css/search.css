@@ -1,0 +1,111 @@
+#search {
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-bottom: 6.25rem;
+}
+
+#search h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    font-family: "Stolzl", sans-serif;
+    line-height: 2.406rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 6.875rem;
+}
+
+.filter-search-rapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.filter-holder:hover {
+    background-color: hsl(0, 79%, 57%);
+}
+
+.filter-holder:hover img {
+    filter: none;
+}
+
+.filter-holder img {
+    height: 1.125rem;
+    filter: brightness(0) invert(1);
+}
+
+.filter-holder {
+    position: absolute;
+    bottom: -11.25rem;
+    right: 1rem;
+    padding: 1rem;
+}
+
+.filter-holder:last-child{
+    right: 4.125rem;
+}
+
+.filter-search {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px white;
+    width: fit-content;
+    height: 3.5rem;
+    margin-top: 6.25rem;
+}
+
+.filter-search input {
+    width: 12.5rem;
+    background-color: transparent;
+    border: transparent;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Stolzl", sans-serif; 
+    line-height: 1.125rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 28em) {
+    .filter-search input {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 37.5rem) {
+    .filter-search input {
+        width: 30rem;
+    }
+}
+
+@media (min-width: 47rem) {
+    .filter-search input {
+        width: 40rem;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    .filter-search input {
+        width: 55.5rem;
+    }
+}
+
+.filter-search input::placeholder {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.938rem;
+    font-weight: 300;
+    font-family: "Stolzl", sans-serif; 
+    line-height: 1.125rem;
+    padding-left: 1rem;
+}
+
+.filter-search img {
+    filter: brightness(0) invert(1);
+    padding: 1rem 1.5rem;
+}
+
+.filter-search img:hover {
+    filter: none;
+    background-color: hsl(0, 79%, 57%);
+}
